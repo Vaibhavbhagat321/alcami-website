@@ -1,0 +1,12 @@
+{
+  "name": "cube-assignment",
+  "version": "1.0.0",
+  "description": "HTML Assignment - Cube",
+  "license": "ISC",
+  "author": "Vaibhav Bhagat",
+  "type": "commonjs",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
