@@ -212,3 +212,17 @@ slideLeft.addEventListener("click", () => {
     updateSlider();
   }
 });
+
+// HAMBURGER LOGIC
+
+const hambur = document.getElementById("hamburger");
+const closeIcon = document.getElementById("close-icon");
+const hamburSection = document.querySelector(".hamburger-menu-section");
+
+hambur.addEventListener("click", () => {
+  hamburSection.style.display = "block";
+});
+
+closeIcon.addEventListener("click", () => {
+  hamburSection.style.display = "none";
+});

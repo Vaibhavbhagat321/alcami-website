@@ -115,6 +115,69 @@ input[type="radio"] + label {
   transform: translate(-50%, -50%);
 }
 
+.hamburger-menu-section {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: #f3f3f3;
+  min-width: 300px;
+  max-width: 300px;
+  height: 100%;
+  gap: 2rem;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
+  padding: 3rem 1rem 1rem;
+  z-index: 100;
+  overflow: scroll;
+}
+
+.hamburger-menu-section .close-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  height: 20px;
+  width: 20px;
+}
+
+.hamburger-menu-section > div:nth-child(2) {
+  margin-bottom: 2rem;
+}
+
+.hamburger-menu-section > div {
+  width: 100%;
+  text-align: center;
+}
+
+.hamburger-menu-section > div > input[type="text"] {
+  padding: 0.5rem 1rem;
+  width: 100%;
+  margin-bottom: 0.5rem;
+  font-size: 0.8rem;
+  border-radius: 100px;
+  background-color: #d9d9d9;
+  border: none;
+  outline: none;
+}
+
+.hamburger-menu-section ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.hamburger-menu-section ul li {
+  padding: 0.5rem 0;
+  width: 100%;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 0.1rem;
+}
+
+.hamburger-menu-section ul li:hover {
+  background-color: #f9f9f9;
+}
+
 nav {
   display: flex;
   flex-direction: row;
@@ -168,6 +231,12 @@ nav ul li {
   padding: 8px;
   text-transform: capitalize;
   font-size: 1rem;
+  cursor: pointer;
+  border-radius: 0.1rem;
+}
+
+nav ul li:hover {
+  background-color: #f9f9f9;
 }
 
 nav .nav_btn-container {
@@ -1378,7 +1447,7 @@ nav .nav_btn-container img {
 .signup-discount-section {
   position: relative;
   margin: 1rem 5vw;
-  background-image: url("../assets/images/singup_discount_background.png");
+  background-image: url("../assets/images/singup_discount_background.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
